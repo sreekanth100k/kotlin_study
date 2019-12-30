@@ -6,6 +6,7 @@ import android.util.Log
 
 class LoopStudy : AppCompatActivity() {
 
+
     var namesList:ArrayList<String> = ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +42,21 @@ class LoopStudy : AppCompatActivity() {
             Log.d("Name current iteration",namesList.get(i))
         }
 
+        var x:Int = 10
+
+        while(x<20){
+            println(x)
+            x++
+        }
+
+        //Demonstrating some features of Kolin...
+        //to create a list of numbers...
+        //just do as following...
+        val numbers:List<Int> = (0..9).toList();
+        Log.d("Numbers 1 to 9",numbers.toString());
 
 
     }
+
+
 }
